@@ -1,15 +1,40 @@
-# modulor
-Hardware samples 
+# Modulor Hardware Samples
+=====================================
 
-Hello David, Hello Students, 
-here are the hardware examples that you may need to stick it together. 
+Hello David, Hello Students,
+
+Below are the hardware examples that you may need to get started with your project.
 
 ## Buttons and LEDs
-in the button_led.py you find simple examples of how to control pins and buttons if needed. In this case we use GPIOZERO libary
+--------------------
+
+In the `button_led.py` file, you'll find simple examples of how to control pins and buttons using the GPIOZERO library.
+
+### Example Use Cases
+
+* Controlling LEDs with GPIOZERO
+* Reading button inputs with GPIOZERO
 
 ## Relay Control
-The usage of the relay are similar to the LEDs, the only thing we need to know is the initial setup for the pins. They have to be init as ground and down, because the relay reconnise only the negativ value via ground to swich from NC (normal close) to open. 
+----------------
 
-## The scale_sample
-here you can find how to use the scale and get precise values out of it. See comments in the code. 
+The usage of relays is similar to LEDs, with the only difference being the initial setup for the pins. Relays require the pins to be initialized as ground and down, as they only recognize the negative value via ground to switch from NC (normally closed) to open.
 
+### Important Notes
+
+* Initialize relay pins as ground and down
+* Relays only recognize negative values via ground
+
+## Scale Sample
+----------------
+
+In the `scale_sample` file, you'll find an example of how to use the scale and get precise values out of it. Please refer to the comments in the code for more information.
+
+### Scale Setup
+
+![Scale Setup](images/scale_setup.jpg)
+
+### Example Use Cases
+
+* Reading precise values from the scale
+* Using the scale with GPIOZERO
